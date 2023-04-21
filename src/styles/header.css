@@ -39,5 +39,10 @@
   .nav-items {
     display: flex;
     flex-direction: row;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .icon-menu {
+    display: none;
   }
 }/*# sourceMappingURL=header.css.map */

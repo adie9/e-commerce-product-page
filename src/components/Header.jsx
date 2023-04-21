@@ -3,7 +3,7 @@ import '../styles/header.css'
 function Header() {
     return (
         <header className='header'>
-            <img src="/images/icon-menu.svg" alt='menu-icon'></img>
+            <img className='icon-menu' src="/images/icon-menu.svg" alt='menu-icon'></img>
             <img className='logo' src="/images/logo.svg" alt="logo"></img>
             <nav className='nav'>
                 <ul className='nav-items'>

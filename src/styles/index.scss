@@ -1,0 +1,16 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// Body font size
+$body-fs: 16px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $body-fs;
+    font-family: 'Kumbh Sans', sans-serif;
+}

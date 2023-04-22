@@ -25,10 +25,10 @@ function Content() {
                 <img className="product-image" src="/images/image-product-1.jpg" alt="product 1"></img>
             </section>
 
-            <section className="description">
+            <section className="information-section">
                 <h3 className='company'>SNEAKER COMPANY</h3>
                 <h2>Fall Limited Edition Sneakers</h2>
-                <p>These low-profile sneakers are your perfect casual wear companion.
+                <p className='description'>These low-profile sneakers are your perfect casual wear companion.
                     Featuring a durable rubber outer sole, they'll withstand everything
                     the weather can offer.
                 </p>

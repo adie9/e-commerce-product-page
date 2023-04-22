@@ -1,4 +1,4 @@
-.description {
+.information-section {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -47,6 +47,10 @@
   align-items: center;
 }
 
+.description {
+  color: hsl(219, 9%, 45%);
+}
+
 .deal {
   color: hsl(26, 100%, 55%);
   padding: 5px;
@@ -80,6 +84,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  background-color: hsl(223, 64%, 98%);
 }
 .amount img {
   cursor: pointer;

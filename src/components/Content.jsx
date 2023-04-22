@@ -1,10 +1,14 @@
 import '../styles/content.css'
-
+import { useState } from 'react'
 
 function Content() {
+    const [count, setCount] = useState(0);
+
     return (
         <div>
             <section className="product-image-section">
+                <img id='prev' className='arrow' src='/images/icon-previous.svg' alt='prev'></img>
+                <img id='next' className='arrow' src='/images/icon-next.svg' alt='next'></img>
                 <img className="product-image" src="/images/image-product-1.jpg" alt="product 1"></img>
             </section>
 
@@ -21,8 +25,12 @@ function Content() {
                     <span className='og-price'>$250.00</span>
                 </div>
                 <div class="button-group">
-                    <button type='button'>0</button>
-                    <button type='button'>Add to Cart</button>
+                    <button className='amount' type='button'>
+                        <img id='minus' src='/images/icon-minus.svg' alt='minus'></img>
+                        0
+                        <img id='plus' src='/images/icon-plus.svg' alt='plus'></img>
+                    </button>
+                    <button className='add-to-cart' type='button'><img src='../images/icon-cart.svg' alt='icon cart'></img>Add to Cart</button>
                 </div>
             </section>
         </div>

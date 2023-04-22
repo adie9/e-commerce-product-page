@@ -11,6 +11,10 @@
   letter-spacing: 1px;
 }
 
+.product-image-section {
+  position: relative;
+}
+
 .product-image {
   width: 100%;
 }
@@ -26,12 +30,12 @@
 }
 
 #prev {
-  top: 30%;
+  top: 50%;
   left: 5%;
 }
 
 #next {
-  top: 30%;
+  top: 50%;
   right: 5%;
 }
 

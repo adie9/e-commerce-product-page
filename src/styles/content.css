@@ -1,0 +1,37 @@
+.company {
+  color: hsl(26, 100%, 55%);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}
+
+.deal {
+  color: hsl(26, 100%, 55%);
+  padding: 5px;
+  background-color: hsl(25, 100%, 94%);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.og-price {
+  color: hsl(220, 14%, 75%);
+  margin-left: auto;
+  text-decoration: line-through;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}/*# sourceMappingURL=content.css.map */

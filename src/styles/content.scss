@@ -100,3 +100,22 @@
     align-items: center;
     column-gap: 10px;
 }
+
+@media screen and (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .product-image-section {
+        width: 300px;
+    }
+}

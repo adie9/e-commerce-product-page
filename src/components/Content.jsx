@@ -3,6 +3,8 @@ import { useState } from 'react'
 
 function Content() {
     const [count, setCount] = useState(0);
+    const images = ["/images/image-product-1.jpg", "/images/image-product-2.jpg", "/images/image-product-3.jpg", "/images/image-product-4.jpg"];
+    const [imageIndex, setImageIndex] = useState(0);
 
     function increment() {
         setCount(count + 1);
@@ -17,12 +19,22 @@ function Content() {
         
     }
 
+    function next() {
+        imageIndex == images.length - 1 ? 
+        setImageIndex(0) : setImageIndex(imageIndex + 1);
+    }
+
+    function prev() {
+        imageIndex == 0 ?
+        setImageIndex(images.length - 1) : setImageIndex(imageIndex - 1);
+    }
+
     return (
-        <div>
+        <div className='container'>
             <section className="product-image-section">
-                <img id='prev' className='arrow' src='/images/icon-previous.svg' alt='prev'></img>
-                <img id='next' className='arrow' src='/images/icon-next.svg' alt='next'></img>
-                <img className="product-image" src="/images/image-product-1.jpg" alt="product 1"></img>
+                <img id='prev' className='arrow' src='/images/icon-previous.svg' alt='prev' onClick={prev}></img>
+                <img id='next' className='arrow' src='/images/icon-next.svg' alt='next' onClick={next}></img>
+                <img className="product-image" src={images[imageIndex]} alt="product"></img>
             </section>
 
             <section className="information-section">
@@ -34,10 +46,10 @@ function Content() {
                 </p>
                 <div className="pricing">
                     <h2 className='price'>$125.00</h2>
-                    <span className='deal'>50%</span>
+                    <span className='deal'>50%</span> 
                     <span className='og-price'>$250.00</span>
                 </div>
-                <div class="button-group">
+                <div className="button-group">
                     <button className='amount' type='button'>
                         <img id='minus' src='/images/icon-minus.svg' alt='minus' onClick={decrement}></img>
                         {count}

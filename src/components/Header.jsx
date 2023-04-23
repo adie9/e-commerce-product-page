@@ -1,4 +1,5 @@
 import '../styles/header.css'
+import Cart from './Cart'
 
 function Header() {
     return (
@@ -15,6 +16,7 @@ function Header() {
                 </ul>
             </nav>
             <img className='cart' src='/images/icon-cart.svg' alt='cart'></img>
+            
             <img className='avatar' src='/images/image-avatar.png' alt='avatar'></img>
         </header>
     )

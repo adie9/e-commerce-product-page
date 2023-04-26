@@ -3,7 +3,9 @@ import '../styles/cart.css'
 function Cart() {
     return (
         <div className='cart-popup'>
-            This is the cart section
+            <h4 className='cart-title'>Cart</h4>
+            <hr></hr>
+
         </div>
     )
 }

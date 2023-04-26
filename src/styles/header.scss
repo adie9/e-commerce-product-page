@@ -9,6 +9,7 @@
     max-width: 1024px;
     margin: 0 auto;
     font-size: 1em;
+    position: relative;
 }
 
 .nav-items {
@@ -28,13 +29,17 @@
     width: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 599px) {
     .nav {
         display: none;
     }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 600px) {
+    .header {
+        border-bottom: 1px solid $light-grayish-blue;
+    }
+    
     .nav-items {
         @include flex-row;
         column-gap: 20px;

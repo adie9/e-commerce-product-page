@@ -3,7 +3,7 @@
 
 .cart-popup {
     position: absolute;
-    background-color: white;
+    background-color: $light-grayish-blue;
     width: 90%;
     height: 200px;
     top: 70px;
@@ -17,4 +17,16 @@
 
 .cart-title {
    padding: 10px; 
+}
+
+.cart-content {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+
+}
+
+.empty {
+    
 }

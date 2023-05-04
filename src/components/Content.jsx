@@ -1,7 +1,7 @@
 import '../styles/content.css'
 import { useState } from 'react'
 
-function Content() {
+function Content({cart, setCart}) {
     const [count, setCount] = useState(0);
     const images = ["/images/image-product-1.jpg", "/images/image-product-2.jpg", "/images/image-product-3.jpg", "/images/image-product-4.jpg"];
     const [imageIndex, setImageIndex] = useState(0);
@@ -27,6 +27,14 @@ function Content() {
     function prev() {
         imageIndex == 0 ?
         setImageIndex(images.length - 1) : setImageIndex(imageIndex - 1);
+    }
+
+    function addToCart() {
+        if (count != 0) {
+            setCart([...cart, count]);
+            console.log(cart);
+        }
+        
     }
 
     return (
@@ -55,7 +63,7 @@ function Content() {
                         {count}
                         <img id='plus' src='/images/icon-plus.svg' alt='plus' onClick={increment}></img>
                     </button>
-                    <button className='add-to-cart' type='button'><img src='../images/icon-cart.svg' alt='icon cart'></img>Add to Cart</button>
+                    <button className='add-to-cart' type='button' onClick={addToCart}><img src='../images/icon-cart.svg' alt='icon cart' ></img>Add to Cart</button>
                 </div>
             </section>
         </div>

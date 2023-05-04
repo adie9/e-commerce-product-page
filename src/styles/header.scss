@@ -10,6 +10,10 @@
     margin: 0 auto;
     font-size: 1em;
     position: relative;
+
+    img {
+        cursor: pointer;
+    }
 }
 
 .nav-items {
@@ -23,6 +27,7 @@
 
 .cart {
     margin-left: auto;
+
 }
 
 .avatar {
@@ -31,15 +36,26 @@
 
 @media screen and (max-width: 599px) {
     .nav {
-        display: none;
+        background-color: red;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        
     }
 }
 
 @media screen and (min-width: 600px) {
     .header {
-        border-bottom: 1px solid $light-grayish-blue;
+        border-bottom: 1px solid gray;
     }
     
+    .nav {
+       
+    }
+
     .nav-items {
         @include flex-row;
         column-gap: 20px;

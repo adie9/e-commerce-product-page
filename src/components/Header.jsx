@@ -36,16 +36,20 @@ function Header({showCart, setShowCart}) {
         </nav>
     )
     const mobileMenu = (
-        !isMenuOpen ? "" : <nav className='nav'>
-            <img src='/images/icon-close.svg' alt='close' onClick={handleToggleMenu}></img>
-            <ul className='nav-items'>
-                <li><a>Collection</a></li>
-                <li><a>Men</a></li>
-                <li><a>Women</a></li>
-                <li><a>About</a></li>
-                <li><a>Contact</a></li>
-            </ul>
-        </nav>
+        !isMenuOpen ? "" : 
+        <div>
+            <nav className='nav'>
+                <img src='/images/icon-close.svg' alt='close' onClick={handleToggleMenu}></img>
+                <ul className='nav-items'>
+                    <li><a>Collection</a></li>
+                    <li><a>Men</a></li>
+                    <li><a>Women</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </nav>
+            { isMenuOpen && <div className='darken-overlay'></div>}
+        </div>
     )
 
     function toggleCart() {

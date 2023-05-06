@@ -1,10 +1,9 @@
 import '../styles/content.css'
 import { useEffect, useState } from 'react'
 
-function Content({cart, setCart}) {
+function Content({cart, setCart, images, imageIndex, setImageIndex}) {
     const [count, setCount] = useState(0);
-    const images = ["/images/image-product-1.jpg", "/images/image-product-2.jpg", "/images/image-product-3.jpg", "/images/image-product-4.jpg"];
-    const [imageIndex, setImageIndex] = useState(0);
+    
 
     useEffect(() => {
         console.log(cart);

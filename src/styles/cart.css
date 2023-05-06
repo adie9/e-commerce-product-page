@@ -40,6 +40,7 @@
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  align-items: center;
 }
 
 .empty {
@@ -47,4 +48,9 @@
   left: 25%;
   right: 25%;
   align-self: center;
+}
+
+.delete {
+  align-self: center;
+  cursor: pointer;
 }/*# sourceMappingURL=cart.css.map */

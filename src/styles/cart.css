@@ -18,7 +18,33 @@
 .cart-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   height: 80%;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.cart-items {
+  width: 100%;
+}
+.cart-items li {
+  list-style: none;
+}
+
+.thumbnail {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.item-container {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.empty {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  align-self: center;
 }/*# sourceMappingURL=cart.css.map */

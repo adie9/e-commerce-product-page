@@ -1,10 +1,14 @@
 import '../styles/content.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Content({cart, setCart}) {
     const [count, setCount] = useState(0);
     const images = ["/images/image-product-1.jpg", "/images/image-product-2.jpg", "/images/image-product-3.jpg", "/images/image-product-4.jpg"];
     const [imageIndex, setImageIndex] = useState(0);
+
+    useEffect(() => {
+        console.log(cart);
+     }, [cart]);
 
     function increment() {
         setCount(count + 1);
@@ -32,7 +36,6 @@ function Content({cart, setCart}) {
     function addToCart() {
         if (count != 0) {
             setCart([...cart, count]);
-            console.log(cart);
         }
         
     }

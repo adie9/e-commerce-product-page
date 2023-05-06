@@ -6,7 +6,6 @@
     justify-content: flex-start;
     align-items: center;
     column-gap: 15px;
-    max-width: 1024px;
     margin: 0 auto;
     font-size: 1em;
     position: relative;
@@ -22,7 +21,7 @@
 }
 
 .logo {
-    width: 100px;
+    max-width: 200px;
 }
 
 .cart {
@@ -72,7 +71,9 @@
         border-bottom: 1px solid gray;
     }
     
-    
+    .logo {
+        margin-right: 20px;
+    }
 
     .nav-items {
         @include flex-row;

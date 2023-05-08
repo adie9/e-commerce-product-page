@@ -108,6 +108,8 @@
     align-items: center;
     max-width: 1024px;
     margin: 0 auto;
+    position: relative;
+    top: 100px;
   }
   .arrow {
     display: none;

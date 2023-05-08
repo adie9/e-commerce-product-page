@@ -62,7 +62,7 @@ function Content({cart, setCart, images, imageIndex, setImageIndex}) {
                 <div className="button-group">
                     <button className='amount' type='button'>
                         <img id='minus' src='/images/icon-minus.svg' alt='minus' onClick={decrement}></img>
-                        {count}
+                        <strong>{count}</strong>
                         <img id='plus' src='/images/icon-plus.svg' alt='plus' onClick={increment}></img>
                     </button>
                     <button className='add-to-cart' type='button' onClick={addToCart}><img src='../images/icon-cart.svg' alt='icon cart' ></img>Add to Cart</button>
